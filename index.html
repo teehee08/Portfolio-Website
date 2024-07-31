@@ -1,0 +1,65 @@
+<!--hold shift 1 enter-->
+<!--type link and enter-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- can get icons from font awesome cdn-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!--google fonts, then copy and paste font link-->
+</head>
+<body class="main-content">
+    <header class="section sec1 header active" id="Home">
+        <div class="about-content">
+            <div class="left-half">
+                <img src="img/Mugshot.jpg" alt="Your Image" class="left-image">
+            </div>
+            <div class="right-half">
+                <h1>Hello, I'm Wen Hui!</h1>
+                <p class="bio-text">I am a final year student pursing a degree in Computer Science in NTU. Being a self-directed and curious individual, I am always looking out for learning opportunities. Outside of work, I enjoy travelling the world, meeting new people and spending quality time through reading novels and weekend hikes with my loved ones.</p>
+            </div>
+        </div>
+    </header> <!--each are classes, type header.section.sec1.header.active then enter and boom get the existing format*/-->
+    <main> 
+        <!-- currently the sections are overlayed on top of each other, later on we can use JS to show effect of different pages-->
+        <!-- id should match with the data-id below to navigate between sections -->
+        <section class="sec2 About" id="About">
+
+        </section>
+        <section class="sec3 Portfolio" id="Portfolio"></section>
+        <section class="sec4 Tech Stack"  id="Tech Stack"></section>
+        <section class="sec5 Contact" id="Contact"></section>
+    </main>
+
+    <div class="controlls"><!--buttons-->
+        <!--.control.control-$.active-btn*5 where $ autoinc the no and *5 duplicates 5 times-->
+        <!--  aria-hidden="true" allows visual contents to be visible without accessing its contents -->
+        <!--  contents marked with that data-id will be activated when we click the button -->
+        <div class="control control-1 active-btn" data-id ="Home">
+            <i class="fa fa-home"></i>
+        </div>
+        <div class="control control-2" data-id="About">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="Portfolio">
+            <i class="fa fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="Tech Stack">
+            <i class="fa fa-book"></i>
+        </div>
+        <div class="control control-5" data-id="Contact">
+            <i class="fa fa-phone-square"></i>
+        </div>
+    </div>
+    
+    <script src="app.js"></script> <!-- incorporate the script into the layout -->
+</body>
+</html>
