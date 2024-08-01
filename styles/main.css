@@ -119,7 +119,50 @@ i{/*resize the icon hence i*/
     transition: all .4s ease-in-out;
 }
 
+#navbar ul { 
+    margin: 0; 
+    padding: 10px; 
+    list-style-type: none;
+    text-align: right; 
+    background-color: #000; 
+    } 
+ 
+#navbar ul li {  
+    display: inline; 
+    } 
+ 
+#navbar ul li a { 
+    text-decoration: none; 
+    padding: .2em 1em; 
+    color: #fff; 
+    background-color: #000; 
+    } 
+ 
+#navbar ul li a:hover { 
+    color: #000; 
+    background-color: #fff; 
+    } 
+ 
+    #navbar{
+    position: fixed;
+    z-index: 100000; /*To bring the navbar to the top of the stacking context*/
+    width: 100%;
+    }
+    nav.stricky-fixed.fadeInDown.animated{
 
+   top:40px; /*Since this element is already set as relative in the original code,
+              the top property places the slideIn menu 40px (height of black nav menu)
+              from the top of the page.*/
+
+  }
+
+.social-icon-wrapper:hover {
+background-color: transparent !important;
+}
+.social-icon {
+width: 20px;
+vertical-align: top;
+}
 
 
 
