@@ -10,8 +10,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- can get icons from font awesome cdn-->
@@ -24,6 +23,11 @@
           <li style="float:left"><a class="social-icon-wrapper" href="https://github.com/teehee08"><div class="social-icon"><i class="fab fa-github"></i></div></a></li> <!--https://stackoverflow.com/questions/26814297/want-to-make-font-awesome-icons-clickable-->
           <li style="float:left"><a class="social-icon-wrapper" href="https://sg.linkedin.com/in/tee-wen-hui-703665244"><div class="social-icon"><i class="fab fa-linkedin"></i></div></a></li>
           <li style="float:left"><a class="social-icon-wrapper" href="https://www.instagram.com/wen_hui_13/"><div class="social-icon"><i class="fab fa-instagram"></i></div></a></li>
+          <li style="float:right"><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="files/resume.pdf" download="resume.pdf" aria-label="Download Résumé">
+            <span>
+                Download Resume 
+            </span>
+          </a></li>
         </ul> 
     </div>
     <header class="section sec1 header active" id="Home">
@@ -40,34 +44,12 @@
     <main> 
         <!-- currently the sections are overlayed on top of each other, later on we can use JS to show effect of different pages-->
         <!-- id should match with the data-id below to navigate between sections -->
-        <section class="sec2 Portfolio" id="Portfolio"></section>
-        <section class="sec3 Travel"  id="Travels"></section>
-        <section class="sec4 Contact" id="Contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span>
-                </div>
-                <div class="contact-content-con">
-                    <form action="" class="contact-form">
-                        <div class="input-control i-c-2">
-                            <input type="text" required placeholder="YOUR NAME">
-                            <input type="email" required placeholder="YOUR EMAIL">
-                        </div>
-                        <div class="input-control">
-                            <input type="text" required placeholder="ENTER SUBJECT">
-                        </div>
-                        <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                        </div>
-                        <div class="submit-btn">
-                            <a href="#" class="main-btn">
-                                <span class="btn-text">Submit</span>
-                            </a>
-                        </div>
-                    </form>
-                </div>
+        <section class="sec2 Travel" id="Travel">
+            <div>
+
             </div>
         </section>
+        <section class="sec3 Projects"  id="Projects"></section>
     </main>
 
     <div class="controlls"><!--buttons-->
@@ -77,14 +59,11 @@
         <div class="control control-1 active-btn" data-id ="Home">
             <i class="fa fa-home"></i>
         </div>
-        <div class="control control-2" data-id="Portfolio">
-            <i class="fa fa-briefcase"></i>
-        </div>
-        <div class="control control-3" data-id="Travels">
+        <div class="control control-2" data-id="Travel">
             <i class="fas fa-globe-americas"></i>
         </div>
-        <div class="control control-4" data-id="Contact">
-            <i class="fa fa-phone-square"></i>
+        <div class="control control-3" data-id="Projects">
+            <i class="fa fa-briefcase"></i>
         </div>
     </div>
     
