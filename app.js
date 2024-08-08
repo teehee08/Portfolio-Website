@@ -19,3 +19,15 @@ function PageTransitions(){
 }
 
 PageTransitions();
+
+// Add event listener to the container
+document.querySelector('.pcard').addEventListener('mouseover', function() {
+    // Add class to the container to trigger the animation
+    this.classList.add('hover');
+});
+  
+  // Add event listener to the container
+document.querySelector('.pcard').addEventListener('mouseout', function() {
+    // Remove class from the container to reset the animation
+    this.classList.remove('hover');
+});

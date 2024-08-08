@@ -114,6 +114,12 @@ i{/*resize the icon hence i*/
 }
 }
 
+.control:hover {
+    background-color: #f7f7f7;
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
 .controlls .active-btn{
     background-color: var(--color-white);
     transition: all .4s ease-in-out;
